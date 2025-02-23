@@ -1,0 +1,14 @@
+/* Genel Stil */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0B3D91; /* Koyu mavi uzay rengi */
+    color: #FFFFFF; /* Beyaz metin */
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+    color: #FFD700; /* Altın rengi başlıklar */
+}
