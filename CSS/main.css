@@ -294,6 +294,16 @@ h1, h2, h3, h4, h5, h6 {
     .card p {
         font-size: 0.8rem; /* Paragraf boyutunu küçült */
     }
+
+    /* Mobil cihazlar için menü öğelerini gizle */
+    header nav ul li.menu-item-home,
+    header nav ul li.menu-item-ideas,
+    header nav ul li.menu-item-inspirations,
+    header nav ul li.menu-item-contact,
+    header nav ul li.menu-item-projects,
+    header nav ul li.menu-item-about {
+        display: none;
+    }
 }
 
 .back-button {
