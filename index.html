@@ -21,16 +21,9 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Astronomy-lover</h1>
+            <h1>Astronomy-lover         NK</h1>
         </div>
-        <!-- Hamburger Menü Simgesi -->
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <!-- Navigasyon Menüsü -->
-        <nav class="nav-menu" id="nav-menu">
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -45,22 +38,22 @@
     <section id="home" class="home">
         <div class="content">
             <h2>Welcome to My Website</h2>
-            <p>Hello, my name is Nur Sima KARHAN.</p>
-            <a href="about.html" class="btn btn-home">Learn More About Me</a>
+            <p>This is Nur Sima KARHAN.</p>
         </div>
     </section>
 
     <section id="about" class="about">
-        <div class="row">
+        <h1 class="silver-heading">About Me</h1>
+        <div class="card">
             <div class="image">
                 <img src="./images/profile.jpg" alt="Nur Sima KARHAN" class="profile-image">
             </div>
-            <div class="content">
-                <h1 class="silver-heading">About Me</h1>
-                <p>My two greatest passions: astronomy and coding. My biggest dream? Bringing AI into astronomy and pushing the boundaries of discovery 🌌🔭.</p>
+            <div class="info">
+                <p>My two greatest passions: astronomy and coding. My biggest dream? Bringing AI and coding into astronomy and pushing the boundaries of discovery 🌌🔭.</p>
                 <ul>
                     <li><i class="fa-solid fa-school"></i> School: İzmir Fen Lisesi 27'</li>
                 </ul>
+                <a href="about.html" class="btn btn-home">Learn More About Me</a>
             </div>
         </div>
     </section>
@@ -130,27 +123,27 @@
     </section>
 
     <section id="ideas" class="ideas">
-            <h1 class="silver-heading">Ideas</h1>
-            <div class="wrapper">
-                <div class="card">
-                    <img src="./images/idea1.jpg" alt="Idea 1">
-                    <div class="info">
-                        <h1>Idea 1</h1>
-                        <p>-</p>
-                        <a href="idea1.html" class="btn btn-card">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/idea2.jpg" alt="Idea 2">
-                    <div class="info">
-                        <h1>Idea 2</h1>
-                        <p>-</p>
-                        <a href="idea2.html" class="btn btn-card">Details</a>
-                    </div>
+        <h1 class="silver-heading">Ideas</h1>
+        <div class="wrapper">
+            <div class="card">
+                <img src="./images/idea1.jpg" alt="Idea 1">
+                <div class="info">
+                    <h1>Idea 1</h1>
+                    <p>-</p>
+                    <a href="idea1.html" class="btn btn-card">Details</a>
                 </div>
             </div>
-        </section>
-    
+            <div class="card">
+                <img src="./images/idea2.jpg" alt="Idea 2">
+                <div class="info">
+                    <h1>Idea 2</h1>
+                    <p>-</p>
+                    <a href="idea2.html" class="btn btn-card">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <h1 class="silver-heading">Contact Me</h1>
         <div class="container">
@@ -167,16 +160,5 @@
             Created by <span>Nur Sima KARHAN</span> | All Rights Reserved
         </div>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
