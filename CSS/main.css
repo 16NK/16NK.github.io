@@ -1,4 +1,7 @@
-/* Global Stiller */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../images/background.jpg');
     background-size: cover;
@@ -15,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 2rem; /* Header'ı daha ince yap */
+    padding: 0.5rem 2rem;
     background: rgba(11, 61, 145, 0.8);
     color: #FFFFFF;
     position: sticky;
@@ -70,7 +73,7 @@ header nav ul li a:hover {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 1.5rem;
     margin: 1rem;
@@ -103,9 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #F5F5F5;
 }
 
-/* Kartların içindeki tüm başlıkların rengini siyah yap */
 .card h1 {
-    color: #000000 !important; /* Siyah renk ve öncelikli */
+    color: #000000 !important;
 }
 
 .about .content h1 {
@@ -147,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about .content {
     flex: 2;
-    background: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
     border-radius: 10px;
     color: #000000;
@@ -180,49 +182,46 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
 }
 
-/* My Inspirations, Ideas, Projects başlıklarını soldan biraz içeriye hizala */
 .projects h1,
 .ideas h1,
 .inspiration h1 {
-    padding-left: 20px; /* Soldan 20px boşluk ekle */
-    margin: 1rem 0; /* Üst ve alt boşluk ekle */
+    padding-left: 20px;
+    margin: 1rem 0;
 }
 
-/* Contact Me başlığını ve altındaki içerikleri soldan biraz içeriye hizala */
 .contact h1,
 .contact .contact-info {
-    padding-left: 20px; /* Soldan 20px boşluk ekle */
+    padding-left: 20px;
 }
 
-/* About Me bölümünü sayfanın tamamına yay ve içeriği büyüt */
 .about {
     padding: 2rem;
 }
 
 .about .card {
-    background: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 90%; /* Kartın genişliğini artır */
+    max-width: 90%;
     display: flex;
     align-items: center;
-    gap: 2rem; /* Görsel ile yazı arasındaki boşluğu artır */
+    gap: 2rem;
 }
 
 .about .card img {
-    width: 250px; /* Görselin genişliğini artır */
+    width: 250px;
     height: auto;
     border-radius: 10px;
 }
 
 .about .card .info {
     flex: 1;
-    font-size: 1.2rem; /* Yazı boyutunu artır */
+    font-size: 1.2rem;
 }
 
 .about .card .info p {
-    margin-bottom: 1rem; /* Paragraf altına boşluk ekle */
+    margin-bottom: 1rem;
 }
 
 .about .card .info ul {
@@ -241,58 +240,56 @@ h1, h2, h3, h4, h5, h6 {
     color: #0B3D91;
 }
 
-/* Learn More About Me butonu için stil */
 .btn-home {
     display: inline-block;
-    margin-top: 1rem; /* Buton ile içerik arasına boşluk ekle */
+    margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background: #C0C0C0; /* Gümüş rengi buton */
-    color: #0B3D91; /* Koyu mavi metin */
+    background: #C0C0C0;
+    color: #0B3D91;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-home:hover {
-    background: #A9A9A9; /* Daha koyu gümüş rengi hover */
+    background: #A9A9A9;
     transform: translateY(-3px);
 }
 
 .about .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(192, 192, 192, 0.3); /* Gümüş rengi gölge */
+    box-shadow: 0 10px 20px rgba(192, 192, 192, 0.3);
 }
 
-/* Ideas bölümündeki kartların kenarlarını daha yuvarlak yap */
 .ideas .card {
-    border-radius: 20px; /* Kenarları daha yuvarlak yap */
+    border-radius: 20px;
 }
 
 @media (max-width: 768px) {
     .card {
-        flex: 1 1 calc(50% - 2rem); /* Kartların genişliğini %50 yap */
-        max-width: calc(50% - 2rem); /* Kartların genişliğini %50 yap */
-        flex-direction: column; /* İçeriği dikey hizala */
-        text-align: center; /* Metni ortala */
-        padding: 1rem; /* Padding'i azalt */
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
     }
 
     .card img {
-        width: 100%; /* Görsellerin genişliğini kartın genişliğine göre ayarla */
-        max-width: 150px; /* Görsellerin maksimum genişliğini sınırla */
-        margin-bottom: 1rem; /* Görsel ile metin arasına boşluk ekle */
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 1rem;
     }
 
     .card .info {
-        font-size: 0.9rem; /* Metin boyutunu küçült */
+        font-size: 0.9rem;
     }
 
     .card h1 {
-        font-size: 1.2rem; /* Başlık boyutunu küçült */
+        font-size: 1.2rem;
     }
 
     .card p {
-        font-size: 0.8rem; /* Paragraf boyutunu küçült */
+        font-size: 0.8rem;
     }
 }
 
@@ -311,49 +308,51 @@ h1, h2, h3, h4, h5, h6 {
     color: #A9A9A9;
 }
 
-/* Project detail içeriği için stil */
 .project-detail {
     display: flex;
-    gap: 2rem; /* Yazı ve görseller arasına boşluk ekle */
+    gap: 2rem;
     padding: 2rem;
 }
 
 .project-detail .content {
-    flex: 2; /* Yazıların genişliği */
+    flex: 2;
     white-space: normal;
     word-wrap: break-word;
-    padding: 1.5rem; /* İçeriğe padding ekle */
-    background: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
-    border-radius: 10px; /* Kenarları yuvarlak yap */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekle */
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail .content p {
+    color: #000000; 
 }
 
 .project-detail .content h2 {
     margin-bottom: 1rem;
-    color: #000000; /* Başlık rengini siyah yap */
+    color: #000000;
 }
 
 .project-detail .content p {
     line-height: 1.6;
-    color: #000000; /* Paragraf rengini siyah yap */
+    color: #000000;
 }
 
-/* Görseller için stil */
 .project-detail .images {
-    flex: 1; /* Görsellerin genişliği */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* Görseller arasına boşluk ekle */
+    gap: 1rem;
 }
 
 .project-detail .images img {
-    width: 100%; /* Görsellerin genişliği */
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
 .project-detail .images .image-placeholder {
-    background: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
@@ -361,15 +360,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
 }
 
-/* Footer Stili */
 footer {
-    background: rgba(11, 61, 145, 0.8); /* Header ile aynı renk */
-    color: #C0C0C0; /* Gümüş rengi metin */
+    background: rgba(11, 61, 145, 0.8);
+    color: #C0C0C0;
     text-align: center;
-    padding: 0.5rem 0; /* Daha ince bir bar */
+    padding: 0.5rem 0;
     font-size: 0.9rem;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 2rem; 
+    margin-top: 2rem;
 }
