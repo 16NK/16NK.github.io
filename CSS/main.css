@@ -318,6 +318,9 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* İçerik kadar yükseklik */
+    overflow: hidden; /* Taşan içeriği gizle */
+    margin-bottom: 2rem; /* Görsellerle arasına boşluk ekle */
 }
 
 .project-detail .content h2 {
