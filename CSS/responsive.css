@@ -31,14 +31,16 @@
         max-width: 100%;
         margin: 0.5rem 0;
         padding: 1rem;
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; 
+        text-align: left; 
+        align-items: center; 
     }
 
     .card img {
-        width: 100%;
+        width: auto;
         max-width: 150px;
-        margin-bottom: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 0; 
     }
 
     .card .info {
@@ -59,14 +61,15 @@
     }
 
     .about .card {
-        flex-direction: column;
+        flex-direction: row; 
         padding: 1rem;
         margin: 0.5rem 0;
     }
 
     .about .card img {
-        width: 100%;
+        width: auto;
         max-width: 200px;
+        margin-right: 1rem; 
     }
 
     .about .card .info {
