@@ -343,6 +343,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-repo {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-repo a {
+    color: #F5F5F5; /* Çok açık gri (neredeyse beyaz) */
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.github-repo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(192, 192, 192, 0.3);
+}
+
+.github-repo a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.github-repo {
     text-align: center;
     margin: 2rem 0;
     padding: 0 2rem;
