@@ -157,10 +157,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-detail .content {
-    background: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px; 
-    padding: 1.5rem; 
-    color: #FFFFFF; 
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: #FFFFFF;
 }
 
 .about .content ul {
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-repo {
-    background: rgba(0, 0, 0, 0.7); /* Yarı saydam siyah arkaplan */
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 1.5rem;
     margin: 2rem;
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-repo a {
-    color: #F8F8F8; /* Çok açık gri (neredeyse beyaz) */
+    color: #F8F8F8;
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: 500;
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-repo a:hover {
-    color: #FFFFFF; /* Tam beyaz hover efekti */
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
