@@ -109,6 +109,19 @@
         padding: 1rem;
     }
 
+    .about-detail .row {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .about-detail .image,
+    .about-detail .content {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+
     .project-detail .content {
         padding: 1rem;
     }
