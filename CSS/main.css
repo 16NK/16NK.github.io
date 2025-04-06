@@ -128,18 +128,21 @@ h1, h2, h3, h4, h5, h6 {
     color: #A9A9A9;
 }
 
-.profile-image {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 0;
-}
-
 .about .row {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     padding: 2rem;
+}
+
+.profile-image {
+    width: 280px;  
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    object-fit: cover; 
+    aspect-ratio: 3/4; 
 }
 
 .about .image {
