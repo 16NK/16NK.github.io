@@ -136,10 +136,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image {
-    width: 280px;  
+    width: 150px;  
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     object-fit: cover; 
     aspect-ratio: 3/4; 
@@ -162,21 +162,21 @@ h1, h2, h3, h4, h5, h6 {
 .about-detail .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-detail .image {
-    flex: 1;
+    flex: 0 0 150px;
     min-width: 300px;
     max-width: 400px;
 }
 
 .about-detail .content {
-    flex: 2;
+    flex: 1;
     min-width: 300px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
