@@ -642,7 +642,8 @@ footer {
 .slider-track {
     display: flex;
     height: 100%;
-    animation: slide-continuous 20s linear infinite;
+    animation: slide-continuous 40s linear infinite;
+    width: 200%; 
 }
 
 .slider-track img {
@@ -669,5 +670,9 @@ footer {
     
     .slider-track img {
         height: 130px;
+    }
+    
+    .slider-track {
+        animation: slide-continuous 30s linear infinite; 
     }
 }
