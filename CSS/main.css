@@ -624,55 +624,75 @@ footer {
 }
 
 .slider-container {
-  width: 100%;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
-  height: 200px;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .continuous-slider {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.continuous-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .slider-track {
-  display: flex;
-  height: 100%;
-  animation: slide-continuous 40s linear infinite;
+    display: flex;
+    width: max-content;              /* içerik kadar genişlik */
+    animation: slide-continuous 40s linear infinite;
 }
 
 .slider-track img {
-  height: 180px;
-  width: auto;
-  margin: 0 5px;
-  object-fit: cover;
-  flex-shrink: 0;
+    height: 180px;
+    width: auto;                     /* orantılı büyüsün */
+    margin: 0 5px;
+    object-fit: cover;
+    flex-shrink: 0;                  /* küçülmesin */
 }
 
+/* Animasyon */
 @keyframes slide-continuous {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* toplam resimlerin yarısı kadar kaydır → çünkü 2 set var */
-    transform: translateX(-50%);
-  }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* bir set kadar kaydır */
+    }
 }
 
 @media (max-width: 768px) {
-  .slider-container {
-    height: 150px;
-  }
-
-  .slider-track img {
-    height: 130px;
-  }
-
-  .slider-track {
-    animation: slide-continuous 30s linear infinite;
-  }
+    .slider-container {
+        height: 150px;
+    }
+    
+    .slider-track img {
+        height: 130px;
+    }
+    
+    .slider-track {
+        animation: slide-continuous 30s linear infinite;
+    }
 }
