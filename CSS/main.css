@@ -628,7 +628,7 @@ footer {
     width: 100%;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
-    height: 12.5vh;
+    height: 300px; 
 }
 
 .slider {
@@ -665,6 +665,15 @@ footer {
 
 @media (max-width: 768px) {
     .slider-container {
-        height: 15vh;
+        height: 200px; 
+    }
+    
+    .slide {
+        flex-direction: column; 
+    }
+    
+    .slide img {
+        width: 100%; 
+        height: 33.33%; 
     }
 }
