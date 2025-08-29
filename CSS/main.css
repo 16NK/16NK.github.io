@@ -628,25 +628,30 @@ footer {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
     height: 200px;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-.slider {
+marquee {
+    height: 100%;
     display: flex;
-    width: 200%; 
-    animation: slide 15s infinite linear;
-    height: 100%;
+    align-items: center;
 }
 
-.slider img {
-    width: 12.5%; 
-    height: 100%;
+.marquee-img {
+    height: 180px;
+    width: auto;
+    margin: 0 5px;
     object-fit: cover;
-    display: block;
-    flex-shrink: 0;
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+
+@media (max-width: 768px) {
+    .slider-container {
+        height: 150px;
+    }
+    
+    .marquee-img {
+        height: 130px;
+    }
 }
