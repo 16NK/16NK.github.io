@@ -628,13 +628,13 @@ footer {
     width: 100%;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
-    height: 300px; 
+    height: 200px; 
 }
 
 .slider {
     display: flex;
-    width: 300%; 
-    animation: slide 20s infinite linear;
+    width: 400%; 
+    animation: slide 25s infinite linear;
     height: 100%;
 }
 
@@ -646,7 +646,7 @@ footer {
 }
 
 .slide img {
-    width: 33.33%; 
+    width: 25%; 
     height: 100%;
     object-fit: cover;
     display: block;
@@ -655,25 +655,28 @@ footer {
 
 @keyframes slide {
     0% { transform: translateX(0); }
-    30% { transform: translateX(0); }
-    35% { transform: translateX(-100%); }
-    65% { transform: translateX(-100%); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
     70% { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
 }
 
 
 @media (max-width: 768px) {
     .slider-container {
-        height: 200px; 
+        height: 150px;
     }
     
     .slide {
-        flex-direction: column; 
+        flex-wrap: wrap; 
     }
     
     .slide img {
-        width: 100%; 
-        height: 33.33%; 
+        width: 50%; 
+        height: 50%;
     }
 }
