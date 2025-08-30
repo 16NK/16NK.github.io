@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -12,6 +13,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -88,9 +95,10 @@ header nav ul li a:hover {
 }
 
 .card img {
-    width: 150px;
-    height: auto;
+    width: 150px; 
+    height: 150px; 
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .card .info {
@@ -114,12 +122,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
 }
 
-.contact-info p {
-    color: #C0C0C0;
-}
-
+.contact-info p,
 .contact-info a {
-    color: #C0C0C0;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -232,6 +238,10 @@ h1, h2, h3, h4, h5, h6 {
 .contact h1,
 .contact .contact-info {
     padding-left: 20px;
+}
+
+.contact-info {
+    margin-left: 15px;
 }
 
 .about {
@@ -448,23 +458,25 @@ footer {
     text-align: center;
     padding: 0.5rem 0;
     font-size: 0.9rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 .inspiration .wide-card {
     flex: 1 1 100%;
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
+    margin: 1rem;               
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    margin: 1rem 0;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inspiration .wide-card {
+    flex: 0 0 calc(67.355% + 0.75rem);
+    margin: 1rem 0 1rem 0;              
 }
 
 .inspiration .wide-card img {
@@ -661,25 +673,24 @@ footer {
 
 .slider-track {
     display: flex;
-    width: max-content;              /* içerik kadar genişlik */
+    width: max-content;             
     animation: slide-continuous 40s linear infinite;
 }
 
 .slider-track img {
     height: 180px;
-    width: auto;                     /* orantılı büyüsün */
+    width: auto;                    
     margin: 0 5px;
     object-fit: cover;
-    flex-shrink: 0;                  /* küçülmesin */
+    flex-shrink: 0;                  
 }
 
-/* Animasyon */
 @keyframes slide-continuous {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-50%); /* bir set kadar kaydır */
+        transform: translateX(-50%);
     }
 }
 
@@ -695,4 +706,8 @@ footer {
     .slider-track {
         animation: slide-continuous 30s linear infinite;
     }
+}
+
+.home {
+    padding-left: 13px;
 }
